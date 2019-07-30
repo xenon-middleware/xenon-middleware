@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Xenon middleware</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Xenon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="https://github.com/xenon-middleware/xenon#adding-xenon-as-a-dependency-to-your-project">Getting started</a>
+                <a class="nav-item nav-link" href="https://xenonrse2017.readthedocs.io/en/latest/">Tutorial</a>
+                <a class="nav-item nav-link" href="https://github.com/xenon-middleware/xenon-examples">Examples</a>
+                <a class="nav-item nav-link" href="http://xenon-middleware.github.io/xenon/versions/3.0.0/javadoc">API
+                    documentation</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="http://xenon-middleware.github.io/xenon/images/NLeSC_Xenon_logo.png" alt="Xenon logo" />
+
+                <h1>Welcome to the Xenon middleware</h1>
+                <p>Xenon is a middleware abstraction library. It provides a simple programming interface to various
+                    pieces of software that can be used to access distributed compute and storage resources.</p>
+
+                <h2>What problem does Xenon solve?</h2>
+                <p>
+
+                    Many applications use remote storage and compute resources. To do so, they need
+                    to include code to interact with the scheduling systems and file transfer
+                    protocols used on those remote machines.
+                </p>
+                <p>
+                    Unfortunately, many different scheduler systems and file transfer protocols
+                    exist, often with completely different programming interfaces. This makes it
+                    hard for applications to switch to a different system or support multiple
+                    remote systems simultaneously.
+                </p>
+                <p>
+                    Xenon solves this problem by providing a single programming interface to many
+                    different types of remote resources, allowing applications to switch without
+                    changing a single line of code.
+                </p>
+                <img style="width: 50rem;"
+                    src="https://github.com/xenon-middleware/xenon/raw/master/docs/images/readme-xenon-abstraction.svg.png"
+                    alt="Xenon abstraction" />
+                <h2>How does Xenon work?</h2>
+                <p>
+                        Xenon is an abstraction layer that sits between your application and the (usually remote)
+                        resource it uses. Xenon is written in Java, but is also accessible from other
+                        languages (e.g. Python) through its gRPC interface and via the command line.
+                </p>
+                <img style="width: 50rem;" src="https://github.com/xenon-middleware/xenon/raw/master/docs/images/readme-xenon-api.svg.png"/>
+                <h2>Ecosystem</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/xenon-middleware/xenon">Xenon library</a>
+                        <p>Java library with local, ssh, ftp, at, slurm, gridengine, torque and webdav
+                            adaptors.</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/xenon-middleware/xenon-adaptors-cloud">Xenon cloud adaptors</a>
+                        <p>Java library with Amazon S3 adaptor.</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/xenon-middleware/xenon-adaptors-grid">Xenon grid adaptors</a>
+                        <p>Java library with gridftp adaptor.</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/xenon-middleware/xenon-adaptors-hadoop">Xenon hadoop adaptors</a>
+                        <p>Java library with HDFS adaptor.</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/xenon-middleware/xenon-grpc">Xenon gRPC server</a>
+                        <p>Run applications remotely via a gRPC interface.</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/xenon-middleware/xenon-cli">Xenon CLI</a>
+                        <p>Command line interface to Xenon</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/xenon-middleware/pyxenon">pyxenon</a>
+                        <p>Python API for Xenon</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/xenon-middleware/xenon-docker-images">Docker images</a>
+                        <p>Docker images with filesystems & schedulers to test Xenon middleware</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/xenon-middleware/xenon-flow">Xenon flow</a>
+                        <p>Run CWL workflows using Xenon
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
